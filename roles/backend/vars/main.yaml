@@ -1,6 +1,6 @@
 
     mysql_root_password: ExpenseApp1
-    #login_host: mysql.hraje.online
+    login_host: mysql-dev.hraje.online
     app_location : /app
     component : backend
   
