@@ -1,7 +1,7 @@
-- name: configure {{ component }} servers
-  hosts: all
-  become: backend
+- name: configure backend servers
+  hosts: backend
+  become: yes
   vars_files:
-  - "variables-{{ environment }}.yaml"
+  - /var/expense/credentials_mysql.yaml
   roles:
-  - "{{ component }}"
+  - backend
